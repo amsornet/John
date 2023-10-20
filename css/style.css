@@ -49,6 +49,7 @@
   }
 }
 .menu__list {
+  display: flex;
   list-style: none;
 }
 .menu__list li {
@@ -129,6 +130,31 @@
     transform: rotate(45deg);
     bottom: calc(50% - 1px);
   }
+}
+
+.btn {
+  background-color: #ff6464;
+  border-radius: 2px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 145%;
+  height: 47px;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  transition: background .3s ease 0s;
+  text-decoration: none;
+}
+@media (min-width: 992px) {
+  .btn:hover {
+    background-color: #bb4949;
+  }
+}
+.btn._fw {
+  width: 100%;
 }
 
 ._container {
