@@ -1,6 +1,6 @@
 
 // font-family: 'Heebo', sans-serif;
-
+$fontFamily: "Heebo";
 
 @import "icons.scss";
 @import "mixins.scss";
@@ -8,6 +8,15 @@
 @import "home.scss";
 @import "ui.scss";
 @import "forms.scss";
+@import "null.scss";
+
+body {
+  color: #21243d;
+  font-size: 14px;
+  &._lock {
+    overflow: hidden;
+  }
+}
 
 ._container {
   max-width: $maxWidthContainer + px;
