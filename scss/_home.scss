@@ -1,17 +1,21 @@
 .hello {
   &__container {
-
+    display: flex;
   }
 
   &__content {
+    padding: 0 110px 0 0;
+    flex: 1 1 auto;
 
   }
 
   &__title {
+    margin: 0 0 20px 0;
 
   }
 
   &__text {
+    margin: 0 0 35px 0;
 
   }
 
@@ -20,6 +24,13 @@
   }
 
   &__avatar {
+    flex: 0 0 243px;
+
+    height: 243px;
+    overflow: hidden;
+    img {
+      max-width: 100%;
+    }
 
   }
 }
