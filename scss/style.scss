@@ -10,6 +10,7 @@ $fontFamily: "Heebo";
 @import "forms.scss";
 @import "null.scss";
 @import "works.scss";
+@import "footer.scss";
 
 body {
   color: #21243d;
@@ -38,5 +39,24 @@ body {
   @media (max-width: $md3 + px) {
     padding: 30px 0 0 0;
   }
-
 }
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__item {
+    transition: color .3s ease 0s;
+    margin: 0 17px;
+    font-size: 30px;
+    color: inherit;
+    @media (min-width: $md2+px) {
+      &:hover {
+        color: #ff6464;
+
+      }
+    }
+
+  }
+}
+
