@@ -14,6 +14,10 @@
   content: "\1f318";
 }
 
+.header {
+  position: relative;
+  z-index: 100;
+}
 .header__content {
   max-width: 1052px;
   padding: 0 10px;
@@ -42,7 +46,7 @@
     left: 0;
     overflow: auto;
     padding: 70px 10px 30px 10px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.95);
   }
   .menu__body._active {
     transform: translate(0px, 0%);
@@ -132,26 +136,87 @@
   }
 }
 
+.hello {
+  padding: 38px 0 70px 0;
+}
+@media (max-width: 868px) {
+  .hello {
+    padding: 0 0 70px 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .hello {
+    padding: 0 0 60px 0;
+  }
+}
 .hello__container {
   display: flex;
 }
+@media (max-width: 767.98px) {
+  .hello__container {
+    text-align: center;
+    flex-direction: column-reverse;
+  }
+}
 .hello__content {
-  padding: 0 110px 0 0;
+  align-items: flex-start;
+  padding: 18px 110px 0 0;
   flex: 1 1 auto;
 }
+.hello__content *:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 868px) {
+  .hello__content {
+    padding: 18px 50px 0 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .hello__content {
+    padding: 40px 0 0 0;
+  }
+}
 .hello__title {
-  margin: 0 0 20px 0;
+  margin: 0 0 25px 0;
+}
+@media (max-width: 767.98px) {
+  .hello__title {
+    margin: 0 0 20px 0;
+  }
 }
 .hello__text {
   margin: 0 0 35px 0;
 }
+@media (max-width: 767.98px) {
+  .hello__text {
+    padding: 0 15px;
+    margin: 0 0 25px 0;
+  }
+}
+.hello__btn {
+  margin: 0 0 25px 0;
+}
+@media (max-width: 767.98px) {
+  .hello__btn {
+    margin: 0 0 20px 0;
+  }
+}
 .hello__avatar {
   flex: 0 0 243px;
   height: 243px;
+  border-radius: 50%;
   overflow: hidden;
+  box-shadow: -5px 13px 0 0 #EDF7FA;
 }
 .hello__avatar img {
   max-width: 100%;
+}
+@media (max-width: 767.98px) {
+  .hello__avatar {
+    width: 170px;
+    height: 170px;
+    margin: 0 0 40px 0;
+  }
 }
 
 .title {
@@ -159,6 +224,11 @@
   font-weight: 700;
   color: #21243D;
   line-height: 136.3636363636%;
+}
+@media (max-width: 767.98px) {
+  .title {
+    font-size: 32px;
+  }
 }
 
 .text {
@@ -218,5 +288,15 @@ body._lock {
   ._container {
     max-width: none;
     padding: 0 10px;
+  }
+}
+
+.page {
+  padding: 90px 0 0 0;
+  flex: 1 1 auto;
+}
+@media (max-width: 767.98px) {
+  .page {
+    padding: 30px 0 0 0;
   }
 }
